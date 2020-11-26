@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "**/db-data": true,
+    "**/redis-data": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "search.exclude": {
+    "**/db-data": true,
+    "**/redis-data": true,
+    "**/output": true
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

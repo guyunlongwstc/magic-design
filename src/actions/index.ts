@@ -1,3 +1,3 @@
-import {createActions} from 'redux-actions';
+import { createActions } from "redux-actions";
 
-export const setAST = createActions('SET_AST');
+export const setAST = createActions("SET_AST");

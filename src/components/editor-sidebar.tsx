@@ -4,11 +4,9 @@
  * @file sidebar.tsx
  * @author guyunlong
  */
-import React from 'react';
-import './editor-sidebar.less';
+import React from "react";
+import "./editor-sidebar.less";
 
 export function EditorSidebar() {
-    return (
-        <div className="editor-sidebar">sidebar</div>
-    );
+  return <div className="editor-sidebar">sidebar</div>;
 }

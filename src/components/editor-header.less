@@ -15,9 +15,18 @@
         display: flex;
         font-size: 14px;
         .toolbar-item {
+            cursor: pointer;
             height: 100%;
             flex: 0 0 40px;
             text-align: center;
+
+            &.active {
+                background: #666;
+            }
+
+            &:hover {
+                background: #666;
+            }
         }
     }
 }
