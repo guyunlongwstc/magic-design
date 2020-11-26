@@ -4,9 +4,9 @@
  * @file designEditor.tsx
  * @author guyunlong
  */
-import React, {Component} from 'react';
+import React from 'react';
 
-const DesignEditor: React.FC = () => {
+const App: React.FC = () => {
       return (
         <div>
           Hello MagicDesign
@@ -14,4 +14,4 @@ const DesignEditor: React.FC = () => {
       );
   }
 
-export default DesignEditor;
+export default App;

@@ -5,15 +5,25 @@ module.exports = {
     entry: {
         magicdesign: path.join(process.cwd(), './src/index.tsx')
     },
+
     output: {
         filename: '[name].js',
         path: path.join(process.cwd(), 'dist'),
         library: 'magic-design',
         libraryTarget: 'umd'
     },
+
     resolve: {
+        alias: {
+            '@components': path.resolve(__dirname, '../src/components'),
+            '@reducers': path.resolve(__dirname, '../src/reducers'),
+            '@actions': path.resolve(__dirname, '../src/actions'),
+            '@helper': path.resolve(__dirname, '../src/helper')
+        },
+
         extensions: ['.js', '.ts', '.tsx', '.json', '.d.ts']
     },
+
     module: {
         rules: [
             {
@@ -31,12 +41,14 @@ module.exports = {
             }
         ]
     },
+
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
             inject: 'body'
         })
     ],
+
     externals: []
 
 }

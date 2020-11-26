@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guyunlongwstc/magic-design.git"
+    "url": "https://github.com/guyunlongwstc/magic-design.git"
   },
   "author": "guyunlong",
   "license": "ISC",
@@ -17,17 +17,22 @@
   },
   "homepage": "https://github.com/guyunlongwstc/magic-design#readme",
   "dependencies": {
+    "@types/redux-actions": "^2.6.1",
     "antd": "^4.8.4",
     "babel-loader": "^8.2.1",
     "classnames": "^2.2.6",
     "css-loader": "^5.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^4.5.0",
+    "konva": "^7.2.0",
     "less-loader": "^7.1.0",
+    "lodash": "^4.17.20",
     "mobx": "^6.0.4",
     "mobx-react": "^7.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.2",
+    "redux-actions": "^2.6.5",
     "reflect-metadata": "^0.1.13",
     "style-loader": "^2.0.0",
     "ts-loader": "^8.0.11",
@@ -42,6 +47,8 @@
     "@types/classnames": "^2.2.11",
     "@types/node": "^14.14.8",
     "@types/react": "^16.9.56",
-    "@types/react-dom": "^16.9.9"
+    "@types/react-dom": "^16.9.9",
+    "@types/react-redux": "^7.1.11",
+    "@types/redux": "^3.6.0"
   }
 }

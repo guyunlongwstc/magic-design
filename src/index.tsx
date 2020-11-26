@@ -5,8 +5,17 @@
  * @author guyunlong
  */
 
-import DesignEditor from './designEditor';
+import App from './app';
+import {Provider} from 'react-redux';
+import * as reducers from '@reducers';
+import {createStore, combineReducers} from 'redux';
 import ReactDOM from 'react-dom';
 import React from 'react';
 
-ReactDOM.render(<DesignEditor />, document.getElementById('main'));
+const store = createStore(combineReducers(reducers))
+
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+document.getElementById('main'));
